@@ -1,6 +1,7 @@
-import {Card} from "../components/card";
+import { Card } from "../components/card";
+import "./bank.png";
 
-const Home = ()=> {
+const Home = () => {
   return (
     <Card
       txtcolor="white"
@@ -8,15 +9,9 @@ const Home = ()=> {
       header="Bad Bank Landing Module"
       title="Welcome to the bank"
       text="You can move around using the navigation bar."
-      body={(
-
- 
-        <img src="./bank.png" className="img-fluid" alt=""/>
-      )}
-
-     
-    />    
-  );  
-}
+      body={<img src="./bank.png" className="img-fluid" alt="responsive" />}
+    />
+  );
+};
 
 export default Home;
